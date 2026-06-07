@@ -77,7 +77,7 @@ class WateringHistoryDayAdapter extends GenericRecyclerAdapter<WateringHistoryVi
         if (dayData.programs.size() > 0) {
             // add empty view for first column
             textView = new TextView(context);
-            textView.setBackgroundColor(ContextCompat.getColor(context, R.color.white));
+            textView.setBackgroundColor(ContextCompat.getColor(context, R.color.surface));
             params = new GridLayout.LayoutParams();
             params.columnSpec = GridLayout.spec(GridLayout.UNDEFINED, 1, 1f);
             params.setGravity(Gravity.FILL_VERTICAL);
@@ -86,7 +86,7 @@ class WateringHistoryDayAdapter extends GenericRecyclerAdapter<WateringHistoryVi
 
             textView = new TextView(context);
             textView.setTextSize(TypedValue.COMPLEX_UNIT_PX, res.getDimension(R.dimen.text_large));
-            textView.setBackgroundColor(ContextCompat.getColor(context, R.color.white));
+            textView.setBackgroundColor(ContextCompat.getColor(context, R.color.surface));
             textView.setText(String.format(" %s ", context.getString(R.string
                     .watering_history_scheduled)));
             textView.setGravity(Gravity.CENTER_HORIZONTAL);
@@ -99,7 +99,7 @@ class WateringHistoryDayAdapter extends GenericRecyclerAdapter<WateringHistoryVi
             textView = new TextView(context);
             textView.setTextSize(TypedValue.COMPLEX_UNIT_PX, res.getDimension(R.dimen
                     .text_large));
-            textView.setBackgroundColor(ContextCompat.getColor(context, R.color.white));
+            textView.setBackgroundColor(ContextCompat.getColor(context, R.color.surface));
             textView.setText(R.string.watering_history_watered);
             textView.setGravity(Gravity.CENTER_HORIZONTAL);
             applyRightPadding(textView);
@@ -117,7 +117,7 @@ class WateringHistoryDayAdapter extends GenericRecyclerAdapter<WateringHistoryVi
                 textView = new TextView(context);
                 textView.setTextSize(TypedValue.COMPLEX_UNIT_PX, res.getDimension(R
                         .dimen.text_large));
-                textView.setBackgroundColor(ContextCompat.getColor(context, R.color.white));
+                textView.setBackgroundColor(ContextCompat.getColor(context, R.color.surface));
                 textView.setText(programData.name);
                 textView.setTypeface(null, Typeface.BOLD);
                 applyLeftPadding(textView);
@@ -133,7 +133,7 @@ class WateringHistoryDayAdapter extends GenericRecyclerAdapter<WateringHistoryVi
                     textView.setEllipsize(TextUtils.TruncateAt.END);
                     textView.setSingleLine(true);
                     textView.setText(zoneData.name);
-                    textView.setBackgroundColor(ContextCompat.getColor(context, R.color.white));
+                    textView.setBackgroundColor(ContextCompat.getColor(context, R.color.surface));
                     textView.setWidth(0);
                     applyLeftPadding(textView);
                     params = new GridLayout.LayoutParams();
@@ -147,7 +147,7 @@ class WateringHistoryDayAdapter extends GenericRecyclerAdapter<WateringHistoryVi
                             res.getDimension(R.dimen.text_large));
                     textView.setGravity(Gravity.CENTER_HORIZONTAL);
                     textView.setText(calendarFormatter.hourMinSecColon(zoneData.totalScheduled));
-                    textView.setBackgroundColor(ContextCompat.getColor(context, R.color.white));
+                    textView.setBackgroundColor(ContextCompat.getColor(context, R.color.surface));
                     params = new GridLayout.LayoutParams();
                     params.columnSpec = GridLayout.spec(GridLayout.UNDEFINED, 1);
                     params.setGravity(Gravity.FILL_HORIZONTAL);
@@ -159,7 +159,7 @@ class WateringHistoryDayAdapter extends GenericRecyclerAdapter<WateringHistoryVi
                             res.getDimension(R.dimen.text_large));
                     textView.setGravity(Gravity.CENTER_HORIZONTAL);
                     textView.setText(calendarFormatter.hourMinSecColon(zoneData.totalWatered));
-                    textView.setBackgroundColor(ContextCompat.getColor(context, R.color.white));
+                    textView.setBackgroundColor(ContextCompat.getColor(context, R.color.surface));
                     applyRightPadding(textView);
                     params = new GridLayout.LayoutParams();
                     params.columnSpec = GridLayout.spec(GridLayout.UNDEFINED, 1);
@@ -177,7 +177,7 @@ class WateringHistoryDayAdapter extends GenericRecyclerAdapter<WateringHistoryVi
                                 (calendarFormatter.timeFormatWithSeconds(use24HourFormat));
                         textView.setText(res.getString(R.string
                                 .watering_history_started_at, startTime));
-                        textView.setBackgroundColor(ContextCompat.getColor(context, R.color.white));
+                        textView.setBackgroundColor(ContextCompat.getColor(context, R.color.surface));
                         applyLeftPadding(textView);
                         params = new GridLayout.LayoutParams();
                         params.columnSpec = GridLayout.spec(GridLayout.UNDEFINED, 3, 1f);
@@ -194,7 +194,7 @@ class WateringHistoryDayAdapter extends GenericRecyclerAdapter<WateringHistoryVi
                         textView.setText(res.getString(R.string
                                 .watering_history_water_saved, decimalFormatter.limitedDecimals
                                 (zoneData.waterSavedAmount, 2), units));
-                        textView.setBackgroundColor(ContextCompat.getColor(context, R.color.white));
+                        textView.setBackgroundColor(ContextCompat.getColor(context, R.color.surface));
                         applyLeftPadding(textView);
                         params = new GridLayout.LayoutParams();
                         params.columnSpec = GridLayout.spec(GridLayout.UNDEFINED, 3, 1f);
@@ -210,7 +210,7 @@ class WateringHistoryDayAdapter extends GenericRecyclerAdapter<WateringHistoryVi
             textView.setTextSize(TypedValue.COMPLEX_UNIT_PX, res.getDimension(R.dimen
                     .text_large));
             textView.setText(context.getString(R.string.watering_history_no_watering_data));
-            textView.setBackgroundColor(ContextCompat.getColor(context, android.R.color.white));
+            textView.setBackgroundColor(ContextCompat.getColor(context, R.color.surface));
             textView.setTypeface(null, Typeface.ITALIC);
             applyLeftRightPadding(textView);
             params = new GridLayout.LayoutParams();
@@ -235,7 +235,7 @@ class WateringHistoryDayAdapter extends GenericRecyclerAdapter<WateringHistoryVi
 
     private void addWhiteVerticalSpace(GridLayout gridLayout) {
         TextView space = new TextView(context);
-        space.setBackgroundColor(ContextCompat.getColor(context, R.color.white));
+        space.setBackgroundColor(ContextCompat.getColor(context, R.color.surface));
         space.setMinimumHeight(res.getDimensionPixelSize(R.dimen.spacing_small));
         GridLayout.LayoutParams params = new GridLayout.LayoutParams();
         params.columnSpec = GridLayout.spec(GridLayout.UNDEFINED, 3, 1f);

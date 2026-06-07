@@ -30,6 +30,7 @@ import com.rainmachine.infrastructure.util.RainApplication;
 import java.io.File;
 import java.security.cert.CertificateException;
 import java.security.cert.X509Certificate;
+import java.util.Arrays;
 import java.util.concurrent.TimeUnit;
 
 import javax.inject.Named;
@@ -43,7 +44,9 @@ import dagger.Module;
 import dagger.Provides;
 import io.reactivex.schedulers.Schedulers;
 import okhttp3.Cache;
+import okhttp3.ConnectionSpec;
 import okhttp3.OkHttpClient;
+import okhttp3.TlsVersion;
 import okhttp3.logging.HttpLoggingInterceptor;
 import retrofit2.Retrofit;
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
@@ -67,6 +70,15 @@ public class RemoteModule {
         OkHttpClient.Builder builder = new OkHttpClient.Builder();
         builder.sslSocketFactory(sslSocketFactory, trustManager);
         builder.hostnameVerifier((hostname, session) -> true);
+        // RainMachine controllers (especially older firmware) only speak legacy TLS (1.0/1.1) with
+        // old cipher suites, or plain HTTP. OkHttp's default MODERN_TLS spec would reject those, so
+        // allow every TLS version down to 1.0 plus all cipher suites the socket enables (see
+        // TlsCompatSocketFactory), and permit cleartext for HTTP controller URLs.
+        ConnectionSpec legacyTls = new ConnectionSpec.Builder(ConnectionSpec.MODERN_TLS)
+                .tlsVersions(TlsVersion.TLS_1_2, TlsVersion.TLS_1_1, TlsVersion.TLS_1_0)
+                .allEnabledCipherSuites()
+                .build();
+        builder.connectionSpecs(Arrays.asList(legacyTls, ConnectionSpec.CLEARTEXT));
         builder.connectTimeout(30, TimeUnit.SECONDS);
         builder.readTimeout(40, TimeUnit.SECONDS);
         File cacheDir = new File(context.getCacheDir(), "rainmachine-cache");
@@ -115,7 +127,8 @@ public class RemoteModule {
             TrustManager[] trustAllCerts = new TrustManager[]{trustManager};
             SSLContext sc = SSLContext.getInstance("TLS");
             sc.init(null, trustAllCerts, new java.security.SecureRandom());
-            return sc.getSocketFactory();
+            // Wrap so every socket enables all device-supported (incl. legacy) protocols + ciphers.
+            return new TlsCompatSocketFactory(sc.getSocketFactory());
         } catch (Throwable throwable) {
             Timber.w(throwable);
         }

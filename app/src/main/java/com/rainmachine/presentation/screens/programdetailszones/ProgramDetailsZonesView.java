@@ -175,7 +175,7 @@ public class ProgramDetailsZonesView extends ScrollView implements ProgramDetail
 
     private void updatePreviousZoneView(ZonePosition zonePosition) {
         tvPrevious.setBackgroundColor(ContextCompat.getColor(getContext(), zonePosition ==
-                ZonePosition.FIRST ? R.color.gray_light : R.color.white));
+                ZonePosition.FIRST ? R.color.gray_light : R.color.surface));
         tvPrevious.setTextColor(ContextCompat.getColor(getContext(), zonePosition == ZonePosition
                 .FIRST ? R.color.text_white : R.color.main));
     }

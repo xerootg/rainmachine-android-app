@@ -128,7 +128,7 @@ public class ProgramDetailsFrequencyView extends ScrollView implements
     public void updateNextRun(Program program) {
         if (program.nextRunSprinklerLocalDate != null) {
             cardNextRun.setCardBackgroundColor(ContextCompat.getColor(getContext(), program
-                    .isEveryNDays() ? R.color.main : R.color.white));
+                    .isEveryNDays() ? R.color.main : R.color.surface));
             tvNextRunLabel.setText(program.isEveryNDays() ? R.string
                     .program_details_change_next_run : R.string.program_details_next_run);
             tvNextRunLabel.setTextColor(ContextCompat.getColor(getContext(), program.isEveryNDays

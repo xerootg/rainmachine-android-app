@@ -54,11 +54,11 @@
         <item name="android:textSize">@dimen/text_medium</item>
     </style>
 
-    <style name="AppThemeDialogStyle" parent="Theme.AppCompat.Light.Dialog">
+    <style name="AppThemeDialogStyle" parent="Theme.AppCompat.DayNight.Dialog">
         <item name="colorAccent">@color/main</item>
     </style>
 
-    <style name="AppThemeAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+    <style name="AppThemeAlertDialogStyle" parent="Theme.AppCompat.DayNight.Dialog.Alert">
         <item name="colorAccent">@color/main</item>
         <item name="android:listChoiceIndicatorSingle">@drawable/rain_btn_radio_holo_light</item>
         <item name="android:listChoiceIndicatorMultiple">@drawable/rain_btn_check_holo_light</item>
@@ -72,11 +72,13 @@
     <style name="CardViewStyle" parent="CardView">
         <item name="cardCornerRadius">0dp</item>
         <item name="contentPadding">@dimen/padding_card</item>
+        <item name="cardBackgroundColor">@color/surface</item>
     </style>
 
     <style name="CardViewZoneStyle" parent="CardView">
         <item name="cardCornerRadius">0dp</item>
         <item name="cardElevation">0dp</item>
+        <item name="cardBackgroundColor">@color/surface</item>
         <item name="contentPaddingTop">8dp</item>
         <item name="contentPaddingBottom">8dp</item>
         <item name="contentPaddingLeft">16dp</item>

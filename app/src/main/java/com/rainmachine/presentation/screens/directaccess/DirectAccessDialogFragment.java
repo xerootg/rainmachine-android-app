@@ -109,8 +109,11 @@ public class DirectAccessDialogFragment extends DialogFragment {
                 inputUrl.setError(getString(R.string.direct_access_url_or_ip));
                 inputUrl.requestFocus();
             } else {
-                url = url.trim().replaceAll("http://", "https://");
-                if (!url.startsWith("https://")) {
+                // Preserve an explicit http:// (needed for legacy controllers whose HTTPS only
+                // speaks TLS 1.0/SSLv3, which modern Android can no longer negotiate). Default to
+                // https:// when the user gives no scheme.
+                url = url.trim();
+                if (!url.startsWith("http://") && !url.startsWith("https://")) {
                     url = "https://" + url;
                 }
 

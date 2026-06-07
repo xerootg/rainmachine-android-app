@@ -44,7 +44,7 @@ public class SettingsView extends RecyclerView {
     protected void onFinishInflate() {
         super.onFinishInflate();
         ButterKnife.bind(this);
-        setBackgroundColor(ContextCompat.getColor(getContext(), R.color.white));
+        setBackgroundColor(ContextCompat.getColor(getContext(), R.color.surface));
         if (!isInEditMode()) {
             presenter.attachView(this);
         }

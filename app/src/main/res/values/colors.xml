@@ -8,6 +8,10 @@
     <color name="map_circle_fill">#883399CC</color>
 
     <color name="bg">#E9E9E9</color>
+    <!-- Surface = background of panels/cards drawn on top of the window bg. Has a dark
+         counterpart in values-night so dark mode flips it (unlike @color/white, which must
+         stay white for text/icons drawn on dark/accent surfaces). -->
+    <color name="surface">#FFFFFF</color>
     <color name="bg_drawer">#EE222222</color>
     <color name="bg_zone_details">#212F3F</color>
     <color name="bg_circle_percentage">#006ca2</color>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Dark-mode color overrides. Only resources that must differ from the light palette are listed;
+  everything else (accent @color/main, @color/white / @color/text_white for content drawn on dark
+  surfaces, etc.) is inherited from values/. The app forces night mode in RainApplication.
+-->
+<resources>
+    <!-- Window background (was #E9E9E9) -->
+    <color name="bg">#121212</color>
+    <!-- Panels/cards drawn on the window (was #FFFFFF) -->
+    <color name="surface">#1E1E1E</color>
+
+    <!-- Primary text used via the theme's textColorPrimary/Tertiary (was #000000) -->
+    <color name="text_primary">#ECECEC</color>
+
+    <!-- Text colors that assumed a light background; lighten so they stay legible on dark -->
+    <color name="text_gray_another">#BBBBBB</color>
+    <color name="text_temps_high">#CCCCCC</color>
+    <color name="text_temps_low">#9E9E9E</color>
+
+    <!-- gray_light is used as a light divider/strip/zebra background; darken it for night -->
+    <color name="gray_light">#2C2C2C</color>
+</resources>

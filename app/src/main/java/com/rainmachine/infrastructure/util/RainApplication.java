@@ -1,5 +1,7 @@
 package com.rainmachine.infrastructure.util;
 
+import android.support.v7.app.AppCompatDelegate;
+
 import com.google.firebase.FirebaseApp;
 import com.rainmachine.BuildConfig;
 import com.rainmachine.R;
@@ -66,6 +68,10 @@ public class RainApplication extends BaseApplication {
     @Override
     public void onCreate() {
         super.onCreate();
+
+        // Force dark mode app-wide. Switch to MODE_NIGHT_FOLLOW_SYSTEM (or expose a setting) to
+        // make this user-controllable. DayNight resources live in res/values-night/.
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
 
         setDebugLogging(isDebug());
 

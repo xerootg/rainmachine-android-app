@@ -151,7 +151,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:background="@color/white"
+                android:background="@color/surface"
                 android:gravity="center"
                 android:paddingBottom="20dp"
                 android:paddingLeft="16dp"

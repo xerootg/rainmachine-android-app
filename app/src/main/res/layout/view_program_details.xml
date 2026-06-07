@@ -217,7 +217,7 @@
                 android:id="@+id/recycler_zones"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/white" />
+                android:background="@color/surface" />
 
             <include layout="@layout/include_divider" />
         </LinearLayout>
