@@ -1,7 +1,7 @@
 package com.rainmachine.presentation.util.formatter;
 
 import android.content.Context;
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 import com.rainmachine.R;
 import com.rainmachine.domain.util.Preconditions;

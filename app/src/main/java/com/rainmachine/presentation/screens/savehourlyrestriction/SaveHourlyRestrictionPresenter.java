@@ -1,7 +1,7 @@
 package com.rainmachine.presentation.screens.savehourlyrestriction;
 
 import android.app.Activity;
-import android.support.v4.app.DialogFragment;
+import androidx.fragment.app.DialogFragment;
 
 import com.rainmachine.R;
 import com.rainmachine.domain.util.DomainUtils;

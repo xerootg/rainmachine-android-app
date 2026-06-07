@@ -4,9 +4,9 @@ package com.rainmachine.presentation.screens.pushnotifications;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.Toolbar;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.appcompat.widget.Toolbar;
 import android.widget.TextView;
 import android.widget.ViewFlipper;
 
@@ -59,7 +59,7 @@ public class PushNotificationsActivity extends SprinklerActivity implements
         setContentView(R.layout.activity_push_notifications);
         ButterKnife.bind(this);
 
-        Toolbar toolbar = ButterKnife.findById(this, R.id.toolbar);
+        Toolbar toolbar = this.findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
         setup();

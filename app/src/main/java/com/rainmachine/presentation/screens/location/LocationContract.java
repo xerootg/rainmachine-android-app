@@ -1,6 +1,6 @@
 package com.rainmachine.presentation.screens.location;
 
-import android.support.v4.app.DialogFragment;
+import androidx.fragment.app.DialogFragment;
 
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.rainmachine.domain.model.Autocomplete;

@@ -2,7 +2,7 @@ package com.rainmachine.presentation.screens.programs;
 
 import android.content.Context;
 import android.graphics.Typeface;
-import android.support.v4.content.ContextCompat;
+import androidx.core.content.ContextCompat;
 import android.text.style.StyleSpan;
 import android.view.View;
 import android.view.ViewGroup;

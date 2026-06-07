@@ -521,7 +521,7 @@
                     <include layout="@layout/include_divider" />
                 </LinearLayout>
 
-                <android.support.v4.widget.Space
+                <android.widget.Space
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/spacing_large" />
             </LinearLayout>

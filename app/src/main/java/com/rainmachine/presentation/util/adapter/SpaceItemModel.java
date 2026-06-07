@@ -1,6 +1,6 @@
 package com.rainmachine.presentation.util.adapter;
 
-import android.support.v4.widget.Space;
+import android.widget.Space;
 import android.view.View;
 
 import com.airbnb.epoxy.EpoxyAttribute;

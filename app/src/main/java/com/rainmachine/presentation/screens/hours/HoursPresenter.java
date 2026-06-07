@@ -1,6 +1,6 @@
 package com.rainmachine.presentation.screens.hours;
 
-import android.support.v7.view.ActionMode;
+import androidx.appcompat.view.ActionMode;
 
 import com.rainmachine.domain.model.HourlyRestriction;
 import com.rainmachine.presentation.screens.savehourlyrestriction.SaveHourlyRestrictionActivity;

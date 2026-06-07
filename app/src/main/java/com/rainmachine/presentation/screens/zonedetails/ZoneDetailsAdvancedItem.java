@@ -1,6 +1,6 @@
 package com.rainmachine.presentation.screens.zonedetails;
 
-import android.support.annotation.DrawableRes;
+import androidx.annotation.DrawableRes;
 
 public class ZoneDetailsAdvancedItem {
     public String text;

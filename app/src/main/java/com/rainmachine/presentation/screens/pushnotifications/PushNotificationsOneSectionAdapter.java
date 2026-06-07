@@ -1,9 +1,9 @@
 package com.rainmachine.presentation.screens.pushnotifications;
 
 import android.content.Context;
-import android.support.annotation.StringRes;
-import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.SwitchCompat;
+import androidx.annotation.StringRes;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.appcompat.widget.SwitchCompat;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.CompoundButton;

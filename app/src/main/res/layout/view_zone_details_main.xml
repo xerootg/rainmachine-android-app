@@ -45,7 +45,7 @@
                 android:visibility="gone" />
         </FrameLayout>
 
-        <android.support.v7.widget.CardView
+        <androidx.cardview.widget.CardView
             android:id="@+id/view_master_valve"
             style="@style/CardViewZoneStyle.SingleLine"
             android:layout_width="match_parent"
@@ -65,13 +65,13 @@
                     android:text="@string/zone_details_master_valve"
                     android:textSize="@dimen/text_larger" />
 
-                <android.support.v7.widget.SwitchCompat
+                <androidx.appcompat.widget.SwitchCompat
                     android:id="@+id/toggle_master_valve"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:paddingLeft="@dimen/spacing_medium" />
             </LinearLayout>
-        </android.support.v7.widget.CardView>
+        </androidx.cardview.widget.CardView>
 
         <LinearLayout
             android:id="@+id/view_program_after_before"
@@ -82,7 +82,7 @@
 
             <include layout="@layout/include_divider" />
 
-            <android.support.v7.widget.CardView
+            <androidx.cardview.widget.CardView
                 android:id="@+id/view_before"
                 style="@style/CardViewZoneStyle.SingleLine"
                 android:layout_width="match_parent"
@@ -109,11 +109,11 @@
                         android:layout_height="wrap_content"
                         android:textSize="@dimen/text_larger" />
                 </LinearLayout>
-            </android.support.v7.widget.CardView>
+            </androidx.cardview.widget.CardView>
 
             <include layout="@layout/include_divider" />
 
-            <android.support.v7.widget.CardView
+            <androidx.cardview.widget.CardView
                 android:id="@+id/view_after"
                 style="@style/CardViewZoneStyle.SingleLine"
                 android:layout_width="match_parent"
@@ -140,7 +140,7 @@
                         android:layout_height="wrap_content"
                         android:textSize="@dimen/text_larger" />
                 </LinearLayout>
-            </android.support.v7.widget.CardView>
+            </androidx.cardview.widget.CardView>
 
             <include layout="@layout/include_divider" />
 
@@ -164,7 +164,7 @@
 
             <include layout="@layout/include_divider" />
 
-            <android.support.v7.widget.CardView
+            <androidx.cardview.widget.CardView
                 style="@style/CardViewZoneStyle.SingleLine"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -187,11 +187,11 @@
                         android:layout_height="wrap_content"
                         android:inputType="textShortMessage" />
                 </LinearLayout>
-            </android.support.v7.widget.CardView>
+            </androidx.cardview.widget.CardView>
 
             <include layout="@layout/include_divider" />
 
-            <android.support.v7.widget.CardView
+            <androidx.cardview.widget.CardView
                 style="@style/CardViewZoneStyle.SingleLine"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -210,17 +210,17 @@
                         android:text="@string/zone_details_zone_active"
                         android:textSize="@dimen/text_larger" />
 
-                    <android.support.v7.widget.SwitchCompat
+                    <androidx.appcompat.widget.SwitchCompat
                         android:id="@+id/toggle_enabled"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:paddingLeft="@dimen/spacing_medium" />
                 </LinearLayout>
-            </android.support.v7.widget.CardView>
+            </androidx.cardview.widget.CardView>
 
             <include layout="@layout/include_divider" />
 
-            <android.support.v7.widget.CardView
+            <androidx.cardview.widget.CardView
                 style="@style/CardViewZoneStyle.SingleLine"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -239,17 +239,17 @@
                         android:text="@string/zone_details_show_image"
                         android:textSize="@dimen/text_larger" />
 
-                    <android.support.v7.widget.SwitchCompat
+                    <androidx.appcompat.widget.SwitchCompat
                         android:id="@+id/toggle_show_image"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:paddingLeft="@dimen/spacing_medium" />
                 </LinearLayout>
-            </android.support.v7.widget.CardView>
+            </androidx.cardview.widget.CardView>
 
             <include layout="@layout/include_divider" />
 
-            <android.support.v7.widget.CardView
+            <androidx.cardview.widget.CardView
                 android:id="@+id/view_weather_settings"
                 style="@style/CardViewZoneStyle.SingleLine"
                 android:layout_width="match_parent"
@@ -263,11 +263,11 @@
                     android:gravity="center_vertical"
                     android:text="@string/zone_details_weather_settings"
                     android:textSize="@dimen/text_larger" />
-            </android.support.v7.widget.CardView>
+            </androidx.cardview.widget.CardView>
 
             <include layout="@layout/include_divider" />
 
-            <android.support.v7.widget.CardView
+            <androidx.cardview.widget.CardView
                 android:id="@+id/view_advanced_zone_settings"
                 style="@style/CardViewZoneStyle.SingleLine"
                 android:layout_width="match_parent"
@@ -281,7 +281,7 @@
                     android:gravity="center_vertical"
                     android:text="@string/zone_details_advanced"
                     android:textSize="@dimen/text_larger" />
-            </android.support.v7.widget.CardView>
+            </androidx.cardview.widget.CardView>
 
             <include layout="@layout/include_divider" />
         </LinearLayout>

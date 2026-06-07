@@ -2,7 +2,7 @@ package com.rainmachine.infrastructure;
 
 import android.content.Intent;
 import android.os.Build;
-import android.support.v4.content.LocalBroadcastManager;
+import androidx.localbroadcastmanager.content.LocalBroadcastManager;
 
 import com.rainmachine.BuildConfig;
 import com.rainmachine.data.local.database.model.Device;

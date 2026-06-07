@@ -71,7 +71,7 @@
                                 tools:ignore="MissingPrefix" />
                         </LinearLayout>
 
-                        <android.support.v7.widget.SwitchCompat
+                        <androidx.appcompat.widget.SwitchCompat
                             android:id="@+id/toggle_rain_sensor"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
@@ -206,7 +206,7 @@
                                     tools:ignore="MissingPrefix" />
                             </LinearLayout>
 
-                            <android.support.v7.widget.SwitchCompat
+                            <androidx.appcompat.widget.SwitchCompat
                                 android:id="@+id/toggle_rain_sensor_closed"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"

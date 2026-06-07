@@ -1,6 +1,6 @@
 package com.rainmachine.presentation.dialogs;
 
-import android.support.v4.app.DialogFragment;
+import androidx.fragment.app.DialogFragment;
 
 import org.parceler.Parcels;
 

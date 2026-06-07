@@ -1,6 +1,6 @@
 package com.rainmachine.infrastructure.scheduler;
 
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 import com.rainmachine.domain.util.SchedulerProvider;
 

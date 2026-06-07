@@ -2,7 +2,7 @@ package com.rainmachine.presentation.screens.remoteaccess;
 
 import android.content.Context;
 import android.graphics.Typeface;
-import android.support.v7.widget.SwitchCompat;
+import androidx.appcompat.widget.SwitchCompat;
 import android.text.style.StyleSpan;
 import android.util.AttributeSet;
 import android.view.View;

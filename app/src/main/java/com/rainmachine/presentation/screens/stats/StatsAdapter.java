@@ -1,7 +1,7 @@
 package com.rainmachine.presentation.screens.stats;
 
 import android.content.Context;
-import android.support.v4.content.ContextCompat;
+import androidx.core.content.ContextCompat;
 import android.text.style.ForegroundColorSpan;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -107,8 +107,8 @@ class StatsAdapter extends GenericListAdapter<DayStats> {
 
     private void computeMaxTextWidth() {
         View view = View.inflate(getContext(), R.layout.item_day, null);
-        TextView tvDay = ButterKnife.findById(view, R.id.day);
-        TextView tvTemps = ButterKnife.findById(view, R.id.temps);
+        TextView tvDay = view.findViewById(R.id.day);
+        TextView tvTemps = view.findViewById(R.id.temps);
         int width;
         for (DayStats item : items) {
             width = (int) tvDay.getPaint().measureText(getDayText(item));

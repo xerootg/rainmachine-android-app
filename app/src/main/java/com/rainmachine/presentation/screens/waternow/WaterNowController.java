@@ -1,7 +1,7 @@
 package com.rainmachine.presentation.screens.waternow;
 
 import android.content.Context;
-import android.support.v7.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import android.view.View;
 
 import com.airbnb.epoxy.OnModelClickListener;

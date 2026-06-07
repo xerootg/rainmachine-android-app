@@ -1,7 +1,7 @@
 package com.rainmachine.presentation.screens.weathersourcedetails;
 
 import android.content.Context;
-import android.support.v7.widget.SwitchCompat;
+import androidx.appcompat.widget.SwitchCompat;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -160,7 +160,7 @@ public class WeatherSourceDetailsView extends ViewFlipper implements CompoundBut
                     if (value instanceof Boolean) {
                         view = LayoutInflater.from(getContext()).inflate(R.layout
                                 .include_parser_param_boolean, viewParams, false);
-                        SwitchCompat toggle = ButterKnife.findById(view, R.id.toggle);
+                        SwitchCompat toggle = view.findViewById(R.id.toggle);
                         toggle.setOnCheckedChangeListener(null);
                         toggle.setChecked((Boolean) value);
                         toggle.setOnCheckedChangeListener(this);
@@ -168,12 +168,12 @@ public class WeatherSourceDetailsView extends ViewFlipper implements CompoundBut
                     } else {
                         view = LayoutInflater.from(getContext()).inflate(R.layout
                                 .include_parser_param_text, viewParams, false);
-                        TextView tvValue = ButterKnife.findById(view, R.id.value);
+                        TextView tvValue = view.findViewById(R.id.value);
                         tvValue.setText(value.toString());
                         view.setTag(new ParamInfo(param, value));
                         view.setOnClickListener(this);
                     }
-                    TextView tvParam = ButterKnife.findById(view, R.id.param);
+                    TextView tvParam = view.findViewById(R.id.param);
                     tvParam.setText(param);
                     LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(LinearLayout
                             .LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);

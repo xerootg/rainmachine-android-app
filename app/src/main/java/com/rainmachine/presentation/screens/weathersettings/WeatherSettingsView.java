@@ -1,7 +1,7 @@
 package com.rainmachine.presentation.screens.weathersettings;
 
 import android.content.Context;
-import android.support.v7.widget.SwitchCompat;
+import androidx.appcompat.widget.SwitchCompat;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -137,10 +137,10 @@ public class WeatherSettingsView extends ViewFlipper implements WeatherSettingsC
         String name = isDefault ? getContext().getString(R.string
                         .weather_settings_default_weather_source,
                 weatherSource.parser.name) : weatherSource.parser.name;
-        ((TextView) ButterKnife.findById(view, R.id.name)).setText(name);
-        ((SwitchCompat) ButterKnife.findById(view, R.id.toggle_enabled)).setChecked
+        ((TextView) view.findViewById(R.id.name)).setText(name);
+        ((SwitchCompat) view.findViewById(R.id.toggle_enabled)).setChecked
                 (weatherSource.parser.enabled);
-        ((TextView) ButterKnife.findById(view, R.id.last_run)).setText(parserFormatter
+        ((TextView) view.findViewById(R.id.last_run)).setText(parserFormatter
                 .lastRun(getContext(), weatherSource.parser));
         view.setOnClickListener(v -> presenter.onClickWeatherSource(weatherSource));
         return view;

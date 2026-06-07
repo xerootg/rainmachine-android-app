@@ -3,8 +3,8 @@ package com.rainmachine.presentation.screens.programdetailsold;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.ActionBar;
-import android.support.v7.widget.Toolbar;
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.widget.Toolbar;
 import android.view.View;
 import android.view.ViewGroup;
 
@@ -72,13 +72,13 @@ public class ProgramDetailsOldActivity extends SprinklerActivity {
     private void setupCustomActionBar() {
         customActionBarView = View.inflate(getSupportActionBar().getThemedContext(), R.layout
                 .include_actionbar_discard_save, null);
-        ButterKnife.findById(customActionBarView, R.id.actionbar_save).setOnClickListener(
+        customActionBarView.findViewById(R.id.actionbar_save).setOnClickListener(
                 v -> {
                     // "Save"
                     presenter.onClickSave();
                 }
         );
-        ButterKnife.findById(customActionBarView, R.id.actionbar_discard).setOnClickListener(
+        customActionBarView.findViewById(R.id.actionbar_discard).setOnClickListener(
                 v -> presenter.onClickDiscardOrBack()
         );
 

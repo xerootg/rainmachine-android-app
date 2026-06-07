@@ -1,6 +1,6 @@
 package com.rainmachine.presentation.screens.help;
 
-import android.support.annotation.StringRes;
+import androidx.annotation.StringRes;
 
 import com.rainmachine.R;
 

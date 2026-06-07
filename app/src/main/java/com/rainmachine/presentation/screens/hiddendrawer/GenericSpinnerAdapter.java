@@ -49,7 +49,7 @@ public class GenericSpinnerAdapter<T> extends BindableAdapter {
 
     @Override
     public void bindView(Object item, int position, View view) {
-        TextView tv = ButterKnife.findById(view, android.R.id.text1);
+        TextView tv = view.findViewById(android.R.id.text1);
         tv.setText(String.valueOf(item));
     }
 

@@ -4,7 +4,7 @@
     tools:layout_height="match_parent"
     tools:layout_width="match_parent">
 
-    <android.support.v4.widget.NestedScrollView
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -28,7 +28,7 @@
 
             <include layout="@layout/include_divider" />
 
-            <android.support.v7.widget.CardView
+            <androidx.cardview.widget.CardView
                 android:id="@+id/card_weather_adaptive"
                 style="@style/CardViewZoneStyle.SingleLine"
                 android:layout_width="match_parent"
@@ -42,11 +42,11 @@
                     android:lineSpacingMultiplier="1.1"
                     tools:text="@string/program_details_adjust_times"
                     tools:textSize="@dimen/text_larger" />
-            </android.support.v7.widget.CardView>
+            </androidx.cardview.widget.CardView>
 
             <include layout="@layout/include_divider" />
 
-            <android.support.v7.widget.CardView
+            <androidx.cardview.widget.CardView
                 android:id="@+id/card_weather_fixed"
                 style="@style/CardViewZoneStyle.SingleLine"
                 android:layout_width="match_parent"
@@ -60,7 +60,7 @@
                     android:lineSpacingMultiplier="1.1"
                     tools:text="@string/program_details_weather_fixed"
                     tools:textSize="@dimen/text_larger" />
-            </android.support.v7.widget.CardView>
+            </androidx.cardview.widget.CardView>
 
             <include layout="@layout/include_divider" />
 
@@ -71,7 +71,7 @@
                 android:layout_height="1dp"
                 android:layout_marginTop="@dimen/spacing_large" />
 
-            <android.support.v7.widget.CardView
+            <androidx.cardview.widget.CardView
                 android:id="@+id/card_cycle_soak"
                 style="@style/CardViewZoneStyle.SingleLine"
                 android:layout_width="match_parent"
@@ -116,11 +116,11 @@
                         android:textSize="@dimen/text_larger"
                         tools:text="Custom" />
                 </LinearLayout>
-            </android.support.v7.widget.CardView>
+            </androidx.cardview.widget.CardView>
 
             <include layout="@layout/include_divider" />
 
-            <android.support.v7.widget.CardView
+            <androidx.cardview.widget.CardView
                 android:id="@+id/card_delay_zones"
                 style="@style/CardViewZoneStyle.SingleLine"
                 android:layout_width="match_parent"
@@ -165,11 +165,11 @@
                         android:textSize="@dimen/text_larger"
                         tools:text="Custom" />
                 </LinearLayout>
-            </android.support.v7.widget.CardView>
+            </androidx.cardview.widget.CardView>
 
             <include layout="@layout/include_divider" />
 
-            <android.support.v7.widget.CardView
+            <androidx.cardview.widget.CardView
                 android:id="@+id/card_do_not_run"
                 style="@style/CardViewZoneStyle.SingleLine"
                 android:layout_width="match_parent"
@@ -215,11 +215,11 @@
                         android:textSize="@dimen/text_larger"
                         tools:text="0.5 inch" />
                 </LinearLayout>
-            </android.support.v7.widget.CardView>
+            </androidx.cardview.widget.CardView>
 
             <include layout="@layout/include_divider" />
         </LinearLayout>
-    </android.support.v4.widget.NestedScrollView>
+    </androidx.core.widget.NestedScrollView>
 
     <include
         layout="@layout/include_progress"

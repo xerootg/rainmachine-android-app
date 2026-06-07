@@ -114,7 +114,7 @@ android {
         buildConfigField "String", "FIREBASE_URL", "\"${firebaseUrl}\""
 
         testApplicationId "com.rainmachine.test"
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     signingConfigs {
         release {}
@@ -189,10 +189,10 @@ afterEvaluate {
 }
 
 dependencies {
-    final SUPPORT_LIBRARY_VERSION = '25.3.1'
+    final ANDROIDX_VERSION = '1.0.0'
     final PLAY_SERVICES_VERSION = '10.2.6'
-    final BUTTER_KNIFE_VERSION = '8.5.1'
-    final PARCELER_VERSION = '1.1.9'
+    final BUTTER_KNIFE_VERSION = '10.2.3'
+    final PARCELER_VERSION = '1.1.12'
     final RETROFIT_VERSION = '2.2.0'
     final OKHTTP_VERSION = '3.6.0'
     final LEAK_CANARY_VERSION = '1.5.1'
@@ -205,12 +205,13 @@ dependencies {
     compile project(':NumberPicker')
     compile project(':MPChartLib')
 
-    compile "com.android.support:appcompat-v7:$SUPPORT_LIBRARY_VERSION"
-
-    compile "com.android.support:cardview-v7:$SUPPORT_LIBRARY_VERSION"
-    compile "com.android.support:recyclerview-v7:$SUPPORT_LIBRARY_VERSION"
-    compile "com.android.support:design:$SUPPORT_LIBRARY_VERSION"
-    compile "com.android.support:gridlayout-v7:$SUPPORT_LIBRARY_VERSION"
+    compile "androidx.appcompat:appcompat:$ANDROIDX_VERSION"
+    compile "androidx.cardview:cardview:$ANDROIDX_VERSION"
+    compile "androidx.recyclerview:recyclerview:$ANDROIDX_VERSION"
+    compile "androidx.gridlayout:gridlayout:$ANDROIDX_VERSION"
+    compile "androidx.viewpager:viewpager:$ANDROIDX_VERSION"
+    compile "androidx.localbroadcastmanager:localbroadcastmanager:$ANDROIDX_VERSION"
+    compile "com.google.android.material:material:$ANDROIDX_VERSION"
 
     compile "com.google.android.gms:play-services-maps:$PLAY_SERVICES_VERSION"
     compile "com.google.android.gms:play-services-location:$PLAY_SERVICES_VERSION"

@@ -3,7 +3,7 @@ package com.rainmachine.presentation.screens.directaccess;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.widget.Toolbar;
+import androidx.appcompat.widget.Toolbar;
 
 import com.rainmachine.R;
 import com.rainmachine.presentation.activities.NonSprinklerActivity;
@@ -22,7 +22,7 @@ public class DirectAccessActivity extends NonSprinklerActivity {
         buildGraphAndInject();
         setContentView(R.layout.activity_direct_access);
 
-        Toolbar toolbar = ButterKnife.findById(this, R.id.toolbar);
+        Toolbar toolbar = this.findViewById(R.id.toolbar);
         linkToolbar(toolbar);
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
