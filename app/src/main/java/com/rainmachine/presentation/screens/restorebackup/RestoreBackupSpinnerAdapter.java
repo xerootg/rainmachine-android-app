@@ -57,7 +57,7 @@ public class RestoreBackupSpinnerAdapter extends BindableAdapter<RestoreBackupVi
 
     @Override
     public void bindView(RestoreBackupViewModel.Backup item, int position, View view) {
-        TextView tv = ButterKnife.findById(view, android.R.id.text1);
+        TextView tv = view.findViewById(android.R.id.text1);
         String date = item.localDateTime.toString("MMM dd, yyyy", Locale.ENGLISH);
         String time = CalendarFormatter.hourMinColon(item.localDateTime.toLocalTime(),
                 backupDeviceData.use24HourFormat);

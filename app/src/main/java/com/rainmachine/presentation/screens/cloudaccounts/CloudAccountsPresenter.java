@@ -1,7 +1,7 @@
 package com.rainmachine.presentation.screens.cloudaccounts;
 
 import android.os.Parcelable;
-import android.support.v4.app.DialogFragment;
+import androidx.fragment.app.DialogFragment;
 
 import com.rainmachine.R;
 import com.rainmachine.data.local.database.model.CloudInfo;

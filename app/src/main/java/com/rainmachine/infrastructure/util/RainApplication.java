@@ -1,6 +1,6 @@
 package com.rainmachine.infrastructure.util;
 
-import android.support.v7.app.AppCompatDelegate;
+import androidx.appcompat.app.AppCompatDelegate;
 
 import com.google.firebase.FirebaseApp;
 import com.rainmachine.BuildConfig;

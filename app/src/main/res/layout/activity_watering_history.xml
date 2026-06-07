@@ -7,7 +7,7 @@
     android:orientation="vertical"
     tools:context=".presentation.screens.wateringhistory.WateringHistoryActivity">
 
-    <android.support.v7.widget.Toolbar
+    <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
@@ -20,7 +20,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/spacing_large" />
-    </android.support.v7.widget.Toolbar>
+    </androidx.appcompat.widget.Toolbar>
 
     <com.rainmachine.presentation.screens.wateringhistory.WateringHistoryView
         style="@style/ScreenMargins"
@@ -31,7 +31,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <android.support.v7.widget.RecyclerView
+            <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/recycler_view"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -39,7 +39,7 @@
                 android:paddingBottom="@dimen/activity_vertical_padding"
                 android:paddingTop="@dimen/activity_vertical_padding" />
 
-            <android.support.design.widget.FloatingActionButton
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
                 android:id="@+id/btn_export"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

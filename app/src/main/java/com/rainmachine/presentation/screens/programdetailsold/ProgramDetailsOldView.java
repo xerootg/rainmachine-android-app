@@ -2,8 +2,8 @@ package com.rainmachine.presentation.screens.programdetailsold;
 
 import android.app.Activity;
 import android.content.Context;
-import android.support.v4.content.ContextCompat;
-import android.support.v7.widget.SwitchCompat;
+import androidx.core.content.ContextCompat;
+import androidx.appcompat.widget.SwitchCompat;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.AttributeSet;
@@ -339,7 +339,7 @@ public class ProgramDetailsOldView extends ViewFlipper implements CompoundButton
     public void setupContent(Program program, boolean useNextRun, boolean showMinutesSeconds,
                              boolean useStartTimeParams, boolean use24HourFormat, boolean
                                      showWeatherOption) {
-        list = ButterKnife.findById(this, android.R.id.list);
+        list = this.findViewById(android.R.id.list);
         View header = View.inflate(getContext(), R.layout.item_header_program_details_old, null);
         list.addHeaderView(header);
         header.setFocusable(true);

@@ -1,6 +1,6 @@
 package com.rainmachine.presentation.screens.wizardtimezone;
 
-import android.support.v4.app.DialogFragment;
+import androidx.fragment.app.DialogFragment;
 import android.text.format.DateFormat;
 
 import com.rainmachine.R;

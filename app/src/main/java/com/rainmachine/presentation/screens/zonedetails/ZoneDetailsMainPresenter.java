@@ -1,7 +1,7 @@
 package com.rainmachine.presentation.screens.zonedetails;
 
 import android.net.Uri;
-import android.support.v4.app.DialogFragment;
+import androidx.fragment.app.DialogFragment;
 
 import com.rainmachine.R;
 import com.rainmachine.domain.boundary.data.SprinklerRepository;

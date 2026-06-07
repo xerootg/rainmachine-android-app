@@ -2,7 +2,7 @@ package com.rainmachine.presentation.screens.wateringhistory;
 
 import android.content.Intent;
 import android.net.Uri;
-import android.support.v4.app.DialogFragment;
+import androidx.fragment.app.DialogFragment;
 
 import com.rainmachine.R;
 import com.rainmachine.presentation.dialogs.RadioOptionsDialogFragment;

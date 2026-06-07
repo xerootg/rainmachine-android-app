@@ -1,6 +1,6 @@
 package com.rainmachine.presentation.screens.stats;
 
-import android.support.v4.util.ArrayMap;
+import androidx.collection.ArrayMap;
 
 import com.rainmachine.R;
 

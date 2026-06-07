@@ -3,7 +3,7 @@ package com.rainmachine.presentation.screens.rainsensor;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
-import android.support.v7.widget.SwitchCompat;
+import androidx.appcompat.widget.SwitchCompat;
 import android.util.AttributeSet;
 import android.view.View;
 import android.widget.CompoundButton;

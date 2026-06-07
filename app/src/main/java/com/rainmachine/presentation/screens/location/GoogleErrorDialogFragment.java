@@ -3,8 +3,8 @@ package com.rainmachine.presentation.screens.location;
 import android.app.Dialog;
 import android.content.DialogInterface;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.v4.app.DialogFragment;
+import androidx.annotation.NonNull;
+import androidx.fragment.app.DialogFragment;
 
 import com.google.android.gms.common.GoogleApiAvailability;
 import com.rainmachine.presentation.activities.NonSprinklerActivity;

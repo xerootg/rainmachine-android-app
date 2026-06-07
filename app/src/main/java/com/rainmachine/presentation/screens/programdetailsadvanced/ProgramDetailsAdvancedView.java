@@ -1,7 +1,7 @@
 package com.rainmachine.presentation.screens.programdetailsadvanced;
 
 import android.content.Context;
-import android.support.v4.content.ContextCompat;
+import androidx.core.content.ContextCompat;
 import android.text.style.AbsoluteSizeSpan;
 import android.text.style.ForegroundColorSpan;
 import android.util.AttributeSet;

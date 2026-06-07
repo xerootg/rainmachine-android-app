@@ -2,7 +2,7 @@ package com.rainmachine.presentation.screens.wateringhistory;
 
 import android.content.Context;
 import android.net.Uri;
-import android.support.v4.content.FileProvider;
+import androidx.core.content.FileProvider;
 
 import com.rainmachine.R;
 import com.rainmachine.data.boundary.SprinklerRepositoryImpl;

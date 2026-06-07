@@ -13,7 +13,7 @@
 
     <include layout="@layout/include_divider" />
 
-    <android.support.v7.widget.CardView
+    <androidx.cardview.widget.CardView
         style="@style/CardViewZoneStyle.SingleLine"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -54,11 +54,11 @@
                 android:minEms="4"
                 android:singleLine="true" />
         </LinearLayout>
-    </android.support.v7.widget.CardView>
+    </androidx.cardview.widget.CardView>
 
     <include layout="@layout/include_divider" />
 
-    <android.support.v7.widget.CardView
+    <androidx.cardview.widget.CardView
         style="@style/CardViewZoneStyle.SingleLine"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -100,11 +100,11 @@
                 android:minEms="4"
                 android:singleLine="true" />
         </LinearLayout>
-    </android.support.v7.widget.CardView>
+    </androidx.cardview.widget.CardView>
 
     <include layout="@layout/include_divider" />
 
-    <android.support.v7.widget.CardView
+    <androidx.cardview.widget.CardView
         style="@style/CardViewZoneStyle.SingleLine"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -145,11 +145,11 @@
                 android:minEms="4"
                 android:singleLine="true" />
         </LinearLayout>
-    </android.support.v7.widget.CardView>
+    </androidx.cardview.widget.CardView>
 
     <include layout="@layout/include_divider" />
 
-    <android.support.v7.widget.CardView
+    <androidx.cardview.widget.CardView
         style="@style/CardViewZoneStyle.SingleLine"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -160,14 +160,14 @@
             android:layout_gravity="center_vertical"
             android:orientation="horizontal">
 
-            <android.support.v7.widget.SwitchCompat
+            <androidx.appcompat.widget.SwitchCompat
                 android:id="@+id/toggle_tall_vegetation"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/zone_details_tall_vegetation"
                 android:textSize="@dimen/text_larger" />
         </LinearLayout>
-    </android.support.v7.widget.CardView>
+    </androidx.cardview.widget.CardView>
 
     <include layout="@layout/include_divider" />
 
@@ -179,7 +179,7 @@
 
     <include layout="@layout/include_divider" />
 
-    <android.support.v7.widget.CardView
+    <androidx.cardview.widget.CardView
         style="@style/CardViewZoneStyle.SingleLine"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -221,11 +221,11 @@
                 android:minEms="4"
                 android:singleLine="true" />
         </LinearLayout>
-    </android.support.v7.widget.CardView>
+    </androidx.cardview.widget.CardView>
 
     <include layout="@layout/include_divider" />
 
-    <android.support.v7.widget.CardView
+    <androidx.cardview.widget.CardView
         style="@style/CardViewZoneStyle.SingleLine"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -246,7 +246,7 @@
                 android:text="@string/zone_details_multiple_monthly_values"
                 android:textSize="@dimen/text_larger" />
         </LinearLayout>
-    </android.support.v7.widget.CardView>
+    </androidx.cardview.widget.CardView>
 
     <include layout="@layout/include_divider" />
 </LinearLayout>

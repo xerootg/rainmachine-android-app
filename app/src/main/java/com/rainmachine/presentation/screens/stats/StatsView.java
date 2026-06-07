@@ -414,7 +414,7 @@ public class StatsView extends ViewFlipper implements StatsContract.View, Dashbo
                         DashboardView.CHART_DEFAULT_HEIGHT_DP);
                 View view = LayoutInflater.from(getContext()).inflate(R.layout
                         .include_progress_chart, chartWrapperView, true);
-                TextView title = ButterKnife.findById(view, R.id.title);
+                TextView title = view.findViewById(R.id.title);
                 title.setText(program.name);
                 dashboardView.addChartWrapper(chartWrapperView);
             } else {

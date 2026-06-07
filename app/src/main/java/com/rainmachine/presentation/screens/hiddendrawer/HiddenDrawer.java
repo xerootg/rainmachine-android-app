@@ -1,6 +1,6 @@
 package com.rainmachine.presentation.screens.hiddendrawer;
 
-import android.support.v4.widget.DrawerLayout;
+import androidx.drawerlayout.widget.DrawerLayout;
 
 import com.rainmachine.infrastructure.util.RainApplication;
 import com.rainmachine.presentation.activities.BaseActivity;

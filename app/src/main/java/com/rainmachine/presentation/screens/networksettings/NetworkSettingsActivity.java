@@ -3,7 +3,7 @@ package com.rainmachine.presentation.screens.networksettings;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.widget.Toolbar;
+import androidx.appcompat.widget.Toolbar;
 
 import com.rainmachine.R;
 import com.rainmachine.presentation.activities.DrawerActivity;
@@ -23,7 +23,7 @@ public class NetworkSettingsActivity extends DrawerActivity {
         super.onCreate(savedInstanceState);
         buildGraphAndInject();
         setContentView(R.layout.activity_network_settings);
-        Toolbar toolbar = ButterKnife.findById(this, R.id.toolbar);
+        Toolbar toolbar = this.findViewById(R.id.toolbar);
         linkToolbar(toolbar);
 
         drawerHelper.setupDrawer(toolbar);

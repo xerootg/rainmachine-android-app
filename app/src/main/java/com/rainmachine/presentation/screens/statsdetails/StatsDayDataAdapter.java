@@ -2,7 +2,7 @@ package com.rainmachine.presentation.screens.statsdetails;
 
 import android.content.Context;
 import android.os.Build;
-import android.support.v4.content.ContextCompat;
+import androidx.core.content.ContextCompat;
 import android.text.TextUtils;
 import android.text.style.ForegroundColorSpan;
 import android.view.LayoutInflater;

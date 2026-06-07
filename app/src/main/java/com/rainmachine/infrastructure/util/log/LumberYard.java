@@ -2,7 +2,7 @@ package com.rainmachine.infrastructure.util.log;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 import com.rainmachine.R;
 

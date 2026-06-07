@@ -4,8 +4,8 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.ActionBar;
-import android.support.v7.widget.Toolbar;
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.widget.Toolbar;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
@@ -73,7 +73,7 @@ public class WeatherSourceDetailsActivity extends SprinklerActivity {
                 v -> presenter.onClickSave());
         customActionBarView.findViewById(R.id.actionbar_discard).setOnClickListener(
                 v -> presenter.onClickDiscard());
-        ButterKnife.findById(customActionBarView, R.id.actionbar_refresh)
+        customActionBarView.findViewById(R.id.actionbar_refresh)
                 .setOnClickListener(v -> presenter.onClickRefreshNow());
         // Show the custom action bar view and hide the normal Home icon and title.
         getSupportActionBar().setDisplayOptions(
@@ -87,11 +87,11 @@ public class WeatherSourceDetailsActivity extends SprinklerActivity {
     }
 
     public void updateCustomActionBarButtons(boolean canBeRefreshed) {
-        TextView tvRefresh = ButterKnife.findById(customActionBarView, R.id.tv_refresh);
+        TextView tvRefresh = customActionBarView.findViewById(R.id.tv_refresh);
         tvRefresh.setEnabled(canBeRefreshed);
         tvRefresh.setCompoundDrawablesWithIntrinsicBounds(canBeRefreshed ? R.drawable
                 .ic_autorenew_24dp : R.drawable.ic_autorenew_24dp_disabled, 0, 0, 0);
-        View viewRefresh = ButterKnife.findById(customActionBarView, R.id.actionbar_refresh);
+        View viewRefresh = customActionBarView.findViewById(R.id.actionbar_refresh);
         viewRefresh.setEnabled(canBeRefreshed);
     }
 
