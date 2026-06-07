@@ -38,9 +38,9 @@ jobs:
       - name: Install legacy SDK packages
         run: |
           yes | sdkmanager --licenses > /dev/null || true
-          sdkmanager "platform-tools" "platforms;android-25" "build-tools;26.0.2"
+          sdkmanager "platform-tools" "platforms;android-25" "build-tools;28.0.3"
 
-      # Gradle 4.1 only runs on JDK 8. Setting JAVA_HOME here makes it the JDK
+      # Gradle 5.6.4 only runs on JDK 8. Setting JAVA_HOME here makes it the JDK
       # the Gradle wrapper uses for the build step below.
       - name: Set up JDK 8
         uses: actions/setup-java@v4
@@ -67,7 +67,7 @@ jobs:
           echo "Built: $APK"
           # apksigner (not keytool) reliably reads both the v1 and v2 signature
           # blocks and prints the cert digest without colons.
-          APKSIGNER="$ANDROID_HOME/build-tools/26.0.2/apksigner"
+          APKSIGNER="$ANDROID_HOME/build-tools/28.0.3/apksigner"
           EXPECTED=880626568b81cf8d75dc97f745cf0d0e392329d98ec4ca6e2443b3be67f9b6c7
           GOT=$("$APKSIGNER" verify --print-certs "$APK" \
                   | grep -i 'SHA-256 digest' | head -1 | awk '{print $NF}')
