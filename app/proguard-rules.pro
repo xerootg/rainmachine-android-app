@@ -46,6 +46,14 @@
 # Gson specific classes
 -keep class sun.misc.Unsafe { *; }
 #-keep class com.google.gson.stream.** { *; }
+
+# RainMachine API request/response POJOs are (de)serialized by Gson via
+# reflection on field names. R8 (the default shrinker since AGP 3.4, which this
+# project moved onto in the toolchain bump) removes "write-only" fields — e.g.
+# LoginRequest.pwd is assigned in code but only read reflectively by Gson — so
+# the serialized body came out empty ("{}"), breaking login (401) and every
+# other request model. Keep the fields (names + presence) of all API models.
+-keepclassmembers class com.rainmachine.data.remote.** { <fields>; }
 #------- Gson END -------
 
 
